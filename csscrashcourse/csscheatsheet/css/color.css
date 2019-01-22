@@ -1,0 +1,205 @@
+/*h1{
+	color:black;
+}*/
+/*--------------Used for resetting all padding and margin----------------------
+*{
+	padding: 0;
+	margin: 0;
+}*/
+body{
+	background-color: grey;
+	color: black	;
+	font-family:serif,sans-serif,Helvetica;
+	font-size: 16px;
+	font-weight: normal;
+	/*Shorter way to write the font for the file:*/
+	font: normal 16px Arial,Helvetica,sans-serif;
+	line-height: 2.7em;
+		margin:0;
+}
+/*Used for the purpose of global *link* settings*/
+a{
+	text-decoration: none;
+	color:black;
+}
+a:hover{
+	color:red;
+}
+a:active{
+	color:green;
+}
+/*a:visited{
+	color:black;
+}*/
+.container{
+	width:80%;/*width will adjust itself according to size of window*/
+	margin:auto;/*auto margin*/
+}
+.button{
+	background-color: black;
+	color:white;
+	padding:10px 15px;
+	border:none;
+}
+.button:hover{
+	color:red;
+}
+.clr{
+	clear:both;
+}
+/*-------------------------------------------------------------------------------------------------------------*/
+.box1{
+	background-color: black;
+	color:white;
+	/*border-right:5px red solid;
+	border-left:5px red solid;
+	border-top:5px red solid;
+	border-bottom:5px red solid;
+    --------For individual bordering--------------
+	*/
+	/*----border style---------*/
+	border:5px blue solid;
+	border-width:3px;
+	/*border-left-width: 5px;*/
+	border-top-style: dashed;
+	border-color: red;
+	/*------------padding style---------*/
+	/*padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;*/
+	padding:5px;
+		/*margin-right: 30px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		margin-left: 30px;	*/
+	margin:5px;
+	/*margin-top:0;*/
+	/*margin-right: 0;*/
+}
+.box1 h1{
+	font-family:Tahoma;
+	font-weight: 800;
+	font-style: italic;
+	 /*TextFormatting*/
+	text-decoration: underline;
+	text-transform: uppercase;
+	letter-spacing: 0em;
+	word-spacing: 1em;
+}
+.box2{
+	border:3px dotted red;
+	padding:10px;
+	margin:10px ;
+	background-color: #00FA9A;
+	color:grey;
+}
+.categories{
+	border:2px red dashed;
+	padding-left:0px;
+	margin:20px 0px;
+}
+.categories h2{
+	text-align: center;
+	color:white	;
+	text-transform: uppercase;
+	text-decoration: underline;
+	/*text-indent: 14px;*/
+}
+.categories ul{
+	/*padding: 0;*/
+	list-style: square;
+	/*list-style: none;*/
+}
+.categories li{
+	padding-bottom:10px;
+	border-bottom:1px black dotted;
+
+}
+/*.margins{
+	margin-top:500px;
+}*/
+.Form{
+	padding:20px;
+}
+.Form .Form-Group{
+	padding-bottom: 15px;
+}
+.Form label
+{
+	display: block;
+}
+.Form input[type="text"],.Form textarea{
+	%padding:5px;
+	width:100%;
+}
+.block{
+	float:left;
+	width: 33.3%;
+	padding: 5px;
+	border:0.5px dashed white;
+	box-sizing:border-box;	
+}
+.block h3{
+	color:blue;
+}
+#main-block{
+	color:black;
+	background-color: white;
+	float:left;
+	width:70%;
+	padding:15px;
+	box-sizing:border-box;
+}
+#sidebar{
+	color:white;
+	background-color: black;
+	float:right;
+	width:30%;
+	padding:15px;
+	box-sizing:border-box;
+}
+.p-box{
+	width:800px;
+	height:500px;
+	padding:15px;
+	border:solid black 1px;
+	margin-top:30px;
+	position: relative;
+	background-image:url("../images/gpg.png");
+	/*background-repeat: no-repeat;*/
+	/*background-position: 200px 100px;*/
+	/*background-position: center top;*/
+}
+.p-box h1{
+	position:absolute;
+	top:100px;
+	left:300px;
+}
+.p-box h2{
+	position: absolute;
+	bottom:200px;
+	right:200px;
+}
+.fix-me{
+	position: fixed;
+	top:100px;
+	left:0px;
+}
+/*
+.my-list li:first-child{
+	background: blue;
+}
+.my-list li:last-child{
+	background: black;
+	color:white;
+}*/
+
+.my-list li:nth-child(odd){
+	background: white;
+	/*color:white;*/
+}
+.my-list li:nth-child(even){
+	background: #C0C0C0;
+	color:white;
+}

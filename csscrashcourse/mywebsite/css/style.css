@@ -1,0 +1,85 @@
+body{
+	background-color: lightgrey;
+	color: black	;
+	font-family:serif,sans-serif,Helvetica;
+	font-size: 16px;
+	font-weight: normal;
+	/*Shorter way to write the font for the file:*/
+	font: normal 16px Arial,Helvetica,sans-serif;
+	/*line-height: .6em;*/
+	margin:0;
+}
+.container{
+	width:80%;/*width will adjust itself according to size of window*/
+	margin:auto;/*auto margin*/
+	overflow: hidden;
+}
+#main-header{
+	background-color: lightcoral;
+	color:white;
+}
+#navbar{
+	background-color: darkgrey;
+	color:white;
+}
+#navbar ul{
+	padding: 0;
+	list-style: none;
+}
+#navbar li{
+	display: inline;
+}
+#navbar a{
+	color:white;
+	text-decoration: none;
+	font-size: 18px;
+	padding-right: 10px;
+
+}
+#showcase{
+	background-image: url('../images/showcase.jpg');
+	background-position: center center;
+	min-height:200px;
+	/*background-repeat: no-repeat;*/
+	margin-bottom: 30px;
+	text-align: center;
+}
+#showcase h1{
+	color:lightcoral;
+	font-size: 50px;
+	line-height: 1.6em;
+	padding-top: 30px;
+}
+#main{
+	float: left;
+	width: 70%;
+	padding:0 30px;
+	box-sizing:border-box;
+}
+#sidebar{
+	float:right;
+	width:30%;
+	background-color: black;
+	color:white;
+	padding:10px;
+	box-sizing:border-box;
+}
+#main-footer{
+	background-color: black;
+	clear:both;
+	color:white;
+	text-align: center;
+	padding:0px;
+	margin-top: 100px;
+}
+@media(max-width: 600px)
+{
+	#main{
+		width:100%;
+		float: none;
+	}
+	#sidebar{
+		width:100%;
+		float: none;
+	}
+}
